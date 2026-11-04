@@ -2,7 +2,7 @@
 
 `flowai`: formalizing the AI-assisted engineering workflow already in practice, day to day, into something documented, deliberate, and shareable. Heavily inspired by Matt Pocock's AI workflow philosophy — his vocabulary and skills are often better-phrased versions of habits already in use, worth adopting and crediting rather than reinventing.
 
-Entry point: his cohort page, [Software Factories for Real Engineers](https://www.aihero.dev/cohorts/software-factories-for-real-engineers-xdy1m), read for its stated concepts (not purchased). Pointed toward his actual public work, `github.com/mattpocock/skills`, where those concepts ship as real, installable skills. That repo, not the cohort page, is the real reference going forward.
+Entry point: his cohort page, [Software Factories for Real Engineers](https://www.aihero.dev/cohorts/software-factories-for-real-engineers-xdy1m), read for its stated concepts. Pointed toward his actual public work, `github.com/mattpocock/skills`, where those concepts ship as real, installable skills. That repo, not the cohort page, is the real reference going forward.
 
 Structure follows `ddemo`'s pattern (Desktop): self-documenting, built in numbered Levels, vocabulary pinned in CONTEXT.md, decisions locked in ROADMAP.md, hard calls get ADRs.
 
