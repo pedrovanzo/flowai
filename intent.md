@@ -49,4 +49,4 @@ Reading/reverse-engineering phase done for now (2026-11-04). Everything needed t
 
 ---
 
-[^1]: `flowai` initially based after public aihero.dev content by Matt Pocock (cohort page above), reverse-engineered rather than purchased.
+[^1]: `flowai` initially based after public aihero.dev content by Matt Pocock (cohort page above).
