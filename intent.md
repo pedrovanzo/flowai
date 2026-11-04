@@ -1,10 +1,12 @@
 # Intent
 
-Source: https://www.aihero.dev/cohorts/software-factories-for-real-engineers-xdy1m (Matt's cohort "Software Factories for Real Engineers").
+`flowai`: formalizing the AI-assisted engineering workflow already in practice, day to day, into something documented, deliberate, and shareable. Heavily inspired by Matt Pocock's AI workflow philosophy — his vocabulary and skills are often better-phrased versions of habits already in use, worth adopting and crediting rather than reinventing.
 
-Not buying cohort. Reading page only, reverse-engineering own learning path from what Matt mentions, same pattern as `ddemo` (Desktop): self-documenting project, built in numbered Levels, own vocabulary pinned in CONTEXT.md, decisions locked in ROADMAP.md, hard calls get ADRs.
+Entry point: his cohort page, [Software Factories for Real Engineers](https://www.aihero.dev/cohorts/software-factories-for-real-engineers-xdy1m), read for its stated concepts (not purchased). Pointed toward his actual public work, `github.com/mattpocock/skills`, where those concepts ship as real, installable skills. That repo, not the cohort page, is the real reference going forward.
 
-## Page summary (captured 2026-11-04)
+Structure follows `ddemo`'s pattern (Desktop): self-documenting, built in numbered Levels, vocabulary pinned in CONTEXT.md, decisions locked in ROADMAP.md, hard calls get ADRs.
+
+## Cohort page summary (captured 2026-11-04)
 
 Core thesis: quality/reliability/waste in AI coding are engineering problems, solvable with engineering, not babysitting. Goal: engineer stops being bug-catcher, becomes delegator.
 
@@ -14,17 +16,17 @@ Curriculum as stated:
 
 Tools named: Claude Code CLI (primary), GitHub Actions, custom lint rules, mutation testing, Copilot/Cursor/Windsurf (compat only).
 
-Page is marketing copy, not a spec — doesn't explain Wayfinder, the adversarial review layer, or the lint/mutation setup in implementable detail.
+Page is marketing copy, not a spec — doesn't explain Wayfinder, the adversarial review layer, or the lint/mutation setup in implementable detail. That detail lives in his skills repo instead (below).
 
 ## Assembly plan
 
-1. Reverse-engineer each named concept (Wayfinder skill, 3-layer review, glossary+ADR practice, GH Actions triage/delegation, custom factories) by pulling from Matt Pocock's public git repos — find where these actually ship as code/skills, not just named.
-2. Build own Level-by-Level demo (CONTEXT.md glossary, ROADMAP.md with locked decisions + Level table, docs/adr for hard-to-reverse calls), mirroring ddemo's structure, topic = agent-driven software factory instead of Docker.
-3. Each Level = one concept made concrete and testable, not a page read.
+1. Ground each concept named on the cohort page (Wayfinder, 3-layer review, glossary+ADR practice, GH Actions triage/delegation, custom factories) in where it actually ships as code in `mattpocock/skills`, not just how it's marketed.
+2. Shape own Level-by-Level demo (CONTEXT.md glossary, ROADMAP.md with locked decisions + Level table, docs/adr for hard-to-reverse calls), mirroring ddemo's structure, topic = own agent-driven workflow instead of Docker.
+3. Each Level = one concept made concrete and testable against real work, not a page read.
 
-## Resolved: source repo found
+## Source repo
 
-`github.com/mattpocock/skills` ("Skills for Real Engineers," installable via `npx skills@latest add mattpocock/skills` or `claude plugin install mattpocock-skills@claude-plugins-official`). Confirmed real, same author, updated 2026-11-04. Already uses ddemo's own pattern (GLOSSARY.md, docs/adr/, SCOPE.md) — so no need to invent structure, just follow his.
+`github.com/mattpocock/skills` ("Skills for Real Engineers," installable via `npx skills@latest add mattpocock/skills` or `claude plugin install mattpocock-skills@claude-plugins-official`). Same author as the cohort, updated 2026-11-04. Already uses the same CONTEXT.md-style pattern (GLOSSARY.md, docs/adr/, SCOPE.md) `flowai` is following — so no need to invent structure, just follow his.
 
 Cohort concept to repo mapping, confirmed by reading each `SKILL.md`:
 
@@ -40,12 +42,12 @@ Also present in repo, not named on cohort page but adjacent: `engineering/improv
 
 ## Open fog
 
-- Deliverable shape deliberately deferred: (a) own ddemo-style demo repo that installs and exercises mattpocock/skills level by level, (b) own set of hand-written skills inspired by his vocabulary, or (c) both. Not deciding now — reading his material first, on own time, before picking a direction. Resume here when ready to shape actual builds.
+- Deliverable shape deliberately deferred: (a) own ddemo-style demo repo that installs and exercises mattpocock/skills level by level, (b) own set of hand-written skills shaped around own workflow but using his vocabulary, or (c) both. Not deciding now — reading his material first, on own time, before picking a direction. Resume here when ready to shape actual builds.
 - Lint/mutation testing specifics from cohort Week 2 not yet located in a single skill — may live in `misc/setup-pre-commit` or be assembled from `software-factory`'s "automated checks" brake rather than a dedicated skill. Confirm by reading `misc/setup-pre-commit` when resuming.
 
 ## Status
 
-Reading/reverse-engineering phase done for now (2026-11-04). Everything needed to pick up later is above: source repo, concept mapping, adjacent skills list, open fog. Next session starts from "Open fog" once direction is picked.
+Reading phase done for now (2026-11-04). Everything needed to pick up later is above: source repo, concept mapping, adjacent skills list, open fog. Next session starts from "Open fog" once direction is picked.
 
 ---
 
